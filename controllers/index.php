@@ -6,5 +6,7 @@ class Index extends Controller {
 		parent::__construct();
 		echo 'We are in index';
 	}
-
+	public function index(){
+		echo'index function';
+	}
 }
