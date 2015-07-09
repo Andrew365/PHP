@@ -1,6 +1,6 @@
 <?php
 Class Controller{
-    function Controller(){
+    function __construct() {
         echo'Main controller';
     }
 

@@ -3,7 +3,7 @@
 
 Class Index{
 
-    function Index(){
+    function __construct() {
         echo 'We are in index';
     }
 
@@ -11,4 +11,5 @@ Class Index{
 
         echo ' You have been greeted';
     }
+
 }

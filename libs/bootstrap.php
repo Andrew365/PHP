@@ -1,11 +1,10 @@
 <?php
 Class Bootstrap{
 
-    function Bootstrap(){
+    function __construct() {
         $url = $_GET['url'];
         $url = rtrim($url);
         $url = explode('/', $url);
-        print_r($url);
 
         $file =  'controllers/'. $url[0] .'.php';
         if(file_exists($file)){
