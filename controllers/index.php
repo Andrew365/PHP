@@ -1,16 +1,10 @@
-
 <?php
 
-Class Index extends controller{
+class Index extends Controller {
 
-    function __construct() {
-        parent::__construct();
-        echo 'We are in index';
-    }
-
-    public function greet ($x = false){
-
-        echo ' You have been greeted';
-    }
+	function __construct() {
+		parent::__construct();
+		echo 'We are in index';
+	}
 
 }

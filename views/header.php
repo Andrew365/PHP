@@ -1,8 +1,4 @@
 <html>
-<head>
-    Header
-</head>
+Header
 <body>
-
-</body>
-</html>
+	
