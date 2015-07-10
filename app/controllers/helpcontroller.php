@@ -14,5 +14,8 @@ class Help extends Controller {
 		require 'models/help_model.php';
 		$model = new Help_Model();
 	}
+	public function index(){
+		echo ' you reached the help controller';
+	}
 
 }
