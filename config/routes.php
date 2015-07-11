@@ -4,9 +4,10 @@ class Router{
   function __construct(){
 /*
 *Put all urls that you route as the second param below in the $urls array
+*putting a url in this array exempts it from error handling
 */
       $urls = array(
-        "blah",
+        //"blah",
         "help"
       );
 /*

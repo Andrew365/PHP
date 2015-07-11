@@ -7,13 +7,14 @@ class Error extends Controller {
 		parent::__construct();
 	}
 	function index(){
-
-		echo 'error index method';
-		$this->view->render('error/index.php');
+		$this->view->render('error/index');
 
 	}
 	function  routingerror(){
 		echo "Routing Error";
+	}
+	function bigerror(){
+		echo'Oops, Something just went horribley wrong';
 	}
 
 }

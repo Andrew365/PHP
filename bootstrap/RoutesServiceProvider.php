@@ -82,9 +82,21 @@ class error_check{
         return true;
       }
       else{
+        require'config/env.php';
         require 'app/controllers/errorcontroller.php';
+
+        if($env == $development){
         $cont = new Error();
         $cont->routingerror();
+      }
+        elseif($env == $production){
+          $cont = new Error();
+          $cont->index();
+        }
+        else{
+          $cont = new Error();
+          $cont->bigerror();
+        }
       }
     }
 }

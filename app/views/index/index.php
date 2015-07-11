@@ -15,6 +15,8 @@
 
 <link rel="stylesheet" type="text/css" media="only screen and (min-width:100px) and
 (max-width: 299px)" href="<?php echo URL; ?>public/stylesheets/100/index.css"/>
+<!-- end of media queries -->
+
 </head>
 
 <body>
