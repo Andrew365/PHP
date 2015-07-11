@@ -1,9 +1,5 @@
 <?php
 Class Route {
-  public $url;
-  public $controller;
-  public $method;
-
 
   function __construct($http, $url, $controller, $method, $params){
   if($http == "GET"){
@@ -14,7 +10,6 @@ Class Route {
     $burl = rtrim($burl, '/');
     $burl = explode('/', $burl);
 
-
     $url = rtrim($url, '/');
     $url = explode('/', $url);
 
@@ -24,7 +19,7 @@ Class Route {
             $controller->index();
             return false;
         }
-
+/////////////////////////////////////////////////////////////////////////////////////////////
     if($burl == $url){
       $file = 'app/controllers/' . $controller . '.php';
 
@@ -57,11 +52,11 @@ Class Route {
                   }
                 }
               }
-          } else {
-            $this->error();
-            return false;
-          }
-        }    
+
+          }///////////end of if burl = url[0]
+
+        }
+
   }//end of function
 
   function error() {
@@ -74,3 +69,20 @@ Class Route {
     echo 'The method doesnt exist';
   }
 }//end of class
+
+class error_check{
+    function __construct($urls){
+        $erc = $_GET['url'];
+        $erc = rtrim($erc, '/');
+        $erc = explode('/', $erc);
+
+        if(in_array($erc[0], $urls)){
+        return true;
+      }
+      else{
+        require 'app/controllers/errorcontroller.php';
+        $cont = new Error();
+        $cont->routingerror();
+      }
+    }
+}
