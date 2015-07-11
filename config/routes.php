@@ -1,5 +1,5 @@
 <?php
-require 'routesSP.php';
+require 'bootstrap/RoutesServiceProvider.php';
 class Router{
   function __construct(){
 /*

@@ -9,6 +9,7 @@ class Error extends Controller {
 	function index(){
 
 		echo 'error index method';
+		$this->view->render('error/index.php');
 
 	}
 	function  routingerror(){
