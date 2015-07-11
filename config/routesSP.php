@@ -72,10 +72,12 @@ Class Route {
 
 class error_check{
     function __construct($urls){
-        $erc = $_GET['url'];
+        $erc = isset($_GET['url']) ? $_GET['url'] : null;
         $erc = rtrim($erc, '/');
         $erc = explode('/', $erc);
-
+        if(empty($erc[0])){
+          return true;
+        }
         if(in_array($erc[0], $urls)){
         return true;
       }
