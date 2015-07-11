@@ -1,5 +1,5 @@
 <?php
-class Login extends Controller{
+class login extends Controller{
   function __construct() {
     parent::__construct();
   }

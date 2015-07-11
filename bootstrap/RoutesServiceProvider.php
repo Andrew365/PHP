@@ -13,12 +13,13 @@ Class Route {
     $url = rtrim($url, '/');
     $url = explode('/', $url);
 
-    if (empty($burl[0]) || $burl[0] == 'index' || $burl[0] == 'Index') {
-            require 'app/controllers/indexcontroller.php';
-            $controller = new Index();
-            $controller->index();
-            return false;
+    if (empty($burl[0]) || $burl[0] == 'Index' || $burl[0] == 'index'){
+        require 'app/controllers/indexcontroller.php';
+        $controller = new Index();
+        $controller->index();
+        return false;
         }
+
 /////////////////////////////////////////////////////////////////////////////////////////////
     if($burl == $url){
       $file = 'app/controllers/' . $controller . '.php';
@@ -33,10 +34,11 @@ Class Route {
       $findcont = $controller;
       $class  = chop($findcont, "controller");
       $classname = $class;
-      
+  //check if chop returns any errors//
       if($classname == 'logi'){
         $classname = $classname . 'n';
       }
+  ////////////////////////////////////
       $class = new $classname();
 
           if (isset($params)) {
@@ -89,15 +91,15 @@ class error_check{
         require'config/env.php';
         require 'app/controllers/errorcontroller.php';
 
-        if($env == $development){
+        if($env == $development && $erc[0] != "index" && $erc[0] != "Index"){
         $cont = new Error();
         $cont->routingerror();
       }
-        elseif($env == $production){
+        elseif($env == $production && $erc[0] != "index" && $erc[0] != "Index"){
           $cont = new Error();
           $cont->index();
         }
-        else{
+        elseif($erc[0] != "index" && $erc[0] != "Index"){
           $cont = new Error();
           $cont->bigerror();
         }

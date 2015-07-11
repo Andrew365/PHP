@@ -22,8 +22,8 @@ class Router{
 *
 * !!IMPORTANT!! Dont try to register a default page the default is set inside RoutesSP.php !!IMPORTANT!!
 */
-      $route = new Route('GET', 'help', 'helpcontroller', 'index', '');
       $route = new Route('GET', 'login', 'logincontroller', 'index', '');
+      $route = new Route('GET', 'help', 'helpcontroller', 'index', '');
 
   }
 }
