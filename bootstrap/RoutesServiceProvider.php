@@ -13,7 +13,7 @@ Class Route {
     $url = rtrim($url, '/');
     $url = explode('/', $url);
 
-    if (empty($burl[0])) {
+    if (empty($burl[0]) || $burl[0] == 'index' || $burl[0] == 'Index') {
             require 'app/controllers/indexcontroller.php';
             $controller = new Index();
             $controller->index();
@@ -31,9 +31,13 @@ Class Route {
           return false;
         }
       $findcont = $controller;
-      $class  = rtrim($controller, 'controller');
+      $class  = chop($findcont, "controller");
       $classname = $class;
-      $class = new $class;
+      
+      if($classname == 'logi'){
+        $classname = $classname . 'n';
+      }
+      $class = new $classname();
 
           if (isset($params)) {
               if (method_exists($findcont, $method)) {
