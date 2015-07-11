@@ -19,6 +19,12 @@ Class Route {
             $controller->index();
             return false;
         }
+        elseif ($burl[0] == 'index' || $burl[0] == "Index") {
+          require 'app/controllers/indexcontroller.php';
+          $controller = new Index();
+          $controller->index();
+          return false;
+        }
 /////////////////////////////////////////////////////////////////////////////////////////////
     if($burl == $url){
       $file = 'app/controllers/' . $controller . '.php';
@@ -82,6 +88,7 @@ class error_check{
         return true;
       }
       else{
+        if($erc[0] != "index" && $erc[0] != "Index"){
         require'config/env.php';
         require 'app/controllers/errorcontroller.php';
 
@@ -97,6 +104,7 @@ class error_check{
           $cont = new Error();
           $cont->bigerror();
         }
+      }
       }
     }
 }
