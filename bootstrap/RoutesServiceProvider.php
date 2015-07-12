@@ -92,11 +92,11 @@ class error_check{
         require'config/env.php';
         require 'app/controllers/errorcontroller.php';
 
-        if($env == $development){
+        if($debug = true){
         $cont = new Error();
         $cont->routingerror();
       }
-        elseif($env == $production){
+        elseif($debug = false){
           $cont = new Error();
           $cont->index();
         }
