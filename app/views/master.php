@@ -1,5 +1,7 @@
 <html>
 <head>
+	<meta name="viewport" content="initial-scale=1">
+	
 	<link rel="stylesheet" href="<?php echo URL; ?>public/stylesheets/master.css" />
 	<link rel ="stylesheet" href = "<?php echo URL; ?>public/stylesheets/reset.css" />
 
