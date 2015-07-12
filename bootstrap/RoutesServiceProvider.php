@@ -88,7 +88,7 @@ class error_check{
         return true;
       }
       else{
-        if($erc[0] != "index" && $erc[0] != "Index"){
+        if($erc[0] != "index" && $erc[0] != "Index" && !in_array($erc[0], $urls)){
         require'config/env.php';
         require 'app/controllers/errorcontroller.php';
 

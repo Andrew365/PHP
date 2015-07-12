@@ -8,7 +8,8 @@ class Router{
 */
       $urls = array(
         //"blah",
-        "help"
+        "help",
+        "signup"
       );
 /*
 *Here you turn on the error checking for $urls
@@ -23,6 +24,7 @@ class Router{
 */
       // $route = new Route('GET', 'blah', 'indexcontroller', 'index', '');
       $route = new Route('GET', 'help', 'helpcontroller', 'index', '');
+      $route1 = new Route('GET', 'signup', 'signupcontroller', 'index', '');
 
   }
 }
