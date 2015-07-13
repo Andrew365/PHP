@@ -7,6 +7,6 @@ require 'config/Controller.php';
 require 'config/Model.php';
 require 'config/View.php';
 
-define('URL', 'http://localhost/MVC/');
+require 'config/env.php';
 
 $app = new Bootstrap();
