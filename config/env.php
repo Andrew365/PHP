@@ -4,15 +4,14 @@
 
  $development = true;
  $production = false;
+ 	error_reporting(0);
+  ////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////
  $env =/*put your env type here!!*/ $development;      //
  ////////////////////////////////////////////////////////
 
 if($env == $production){
   $debug = false;
-  $servername = '';
-  $database = '';
-  $table1 = '';
   define('URL', 'http://localhost/MVC/');//change this when you deploy
 
   /////////DB INFO///////////
@@ -25,9 +24,6 @@ if($env == $production){
 }
 elseif($env = $development){
   $debug = true;
-  $servername = '';
-  $database = '';
-  $table1 = '';
   define('URL', 'http://localhost/MVC/');
 
   /////////////////DB INFO/////////////

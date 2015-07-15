@@ -33,7 +33,7 @@ Class Route {
           require $file;
         }
         else{
-           $this->error();
+          $this->error();
           return false;
         }
       $findcont = $controller;
@@ -45,7 +45,7 @@ Class Route {
               if (method_exists($findcont, $method)) {
                   $findcont->{$method}($params);
               } else {
-                  $this->error();
+                  $this->methoderror();
                   return false;
               }
           } else {

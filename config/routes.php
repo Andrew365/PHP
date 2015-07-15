@@ -10,8 +10,8 @@ class Router{
         //"blah",
         "help",
         "signup",
-        "createdb",
-        "createtables"
+      //  "createdb",
+      //  "createtables"
       );
 /*
 *Here you turn on the error checking for $urls
@@ -27,8 +27,8 @@ class Router{
       // $route = new Route('GET', 'blah', 'indexcontroller', 'index', '');
       $route = new Route('GET', 'help', 'helpcontroller', 'index', '');
       $route1 = new Route('GET', 'signup', 'signupcontroller', 'index', '');
-      $route2 = new Route('GET', 'createdb', 'signupcontroller', 'createdb', '');
-      $route3 = new Route('GET', 'createtables', 'signupcontroller', 'createtables', '');
+/*only use once*/ //$route2 = new Route('GET', 'createdb', 'authcontroller', 'createdb', '');
+/*only use once*/ //$route3 = new Route('GET', 'createtables', 'authcontroller', 'createtables', '');
 
   }
 }
