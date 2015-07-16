@@ -1,2 +1,4 @@
 .idea
+.env.php
 .env
+config/env.php

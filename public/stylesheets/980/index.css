@@ -1,13 +1,5 @@
-.footer{
-  background-color: black;
-  color: white;
-  padding: 40px ;
-  position: fixed;
-  position: bottom center;
-  bottom: 0;
-  width: 100%;
-  z-index: -1;
-  background-attachment: fixed;
+.content{
+  position: relative;
   overflow: hidden;
 }
 #splashpage{
@@ -22,9 +14,6 @@ overflow: hidden;
 #screen{
 float: left;
 
-}
-.filler{
-  height: 1000px;
 }
 #flat{
   position: top right
@@ -53,4 +42,16 @@ float:left;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 10px;
+}
+.footer{
+  background-color: black;
+  color: white;
+  padding: 40px ;
+  position: fixed;
+  position: bottom center;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  background-attachment: fixed;
+  overflow: hidden;
 }

@@ -25,12 +25,6 @@ $(window).scroll(function(){
     $('#title').css({
       'transform' : 'translate(0px, '+ wScroll /2 +'%)'
     });
-    //
-    // $('#screen').css({
-    //   'transform' : 'translate(0px, -'+ wScroll /5 +'%)'
-    // });
-
-
 
 });
   </script>
@@ -48,16 +42,18 @@ $(window).scroll(function(){
     </div>
   </div>
   <div class="content">
-  <div class="filler">
+  <!-- <div class="filler">
 
-  </div>
+  </div> -->
   <div class="container">
      <h1>PHP</h1>
      <hr/>
-     Large amount of experience with PHP. I have completed many projects using this language that have included login systems and email. This site is built upon a MVC style framework that I built myself.
+     Large amount of experience with PHP. I have completed many projects using this language that have included login systems and email. T
+     his site is built upon a MVC style framework that I built myself, and it includes a built in authentication system.
           <h1>Front-End Development</h1>
           <hr/>
-    Front-End technologies are no problem either, I am experienced in Jquery as well as plain javascript, styling languages such as CSS and Sass, and other things such as the Bootstrap Framework.
+    Front-End technologies are no problem either, I am experienced in Jquery as well as plain javascript, styling languages such as CSS and Sass,
+     and other things such as the Bootstrap Framework. For example, this website is built with 5 other stylistic versions for responsive design.
     <h1>The MEAN Stack</h1>
     <hr/>
     One of the newer technologies that I have learned is the use of the MEAN stack which uses Angular, Node, Mongodb, and Express to create a full-stack javascript implementation.
