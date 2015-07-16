@@ -42,11 +42,12 @@ $(window).scroll(function(){
     <div id="linkbar">
     <?php require 'app/views/master.php';?>
   </div>
-  
+
     <div id="title">
       AWDevelopment
     </div>
   </div>
+  <div class="content">
   <div class="filler">
 
   </div>
@@ -61,6 +62,7 @@ $(window).scroll(function(){
     <hr/>
     One of the newer technologies that I have learned is the use of the MEAN stack which uses Angular, Node, Mongodb, and Express to create a full-stack javascript implementation.
   </div>
+</div>
   <div class="footer">
     <h1>Footer</h1>
   </div>

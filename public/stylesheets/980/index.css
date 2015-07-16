@@ -1,4 +1,15 @@
-
+.footer{
+  background-color: black;
+  color: white;
+  padding: 40px ;
+  position: fixed;
+  position: bottom center;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  background-attachment: fixed;
+  overflow: hidden;
+}
 #splashpage{
 background: linear-gradient(rgba(197, 197, 211,0.3), rgba(197, 197, 211,0.5)),
 url('../../images/streetblur.jpg') center center no-repeat fixed;
