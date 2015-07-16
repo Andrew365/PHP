@@ -1,8 +1,40 @@
+
 #splashpage{
 background: linear-gradient(rgba(197, 197, 211,0.7), rgba(197, 197, 211,0.7)),
-url('../../images/street.jpg')
-center center no-repeat fixed;
-height: 430px;
-background-size: cover;
-min-width: 100%;
+url('../../images/street2.jpg') center center no-repeat fixed;
+position: relative;
+position: top center;
+height: auto 500px;
+background-attachment: fixed;
+}
+.filler{
+  height: 1000px;
+}
+#title{
+  font-size: 4em;
+  text-align: center;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+}
+
+#PHP{
+float:left;
+}
+
+#frontend{
+float: right;
+}
+img{
+  height: 350px;
+  width: 350px;
+
+}
+ul {
+  white-space: nowrap;
+}
+
+ul, li {
+  list-style: none;
+  display: inline;
 }

@@ -1,8 +1,45 @@
+
 #splashpage{
-background: linear-gradient(rgba(197, 197, 211,0.7), rgba(197, 197, 211,0.7)),
-url('../../images/street.jpg')
-center center no-repeat fixed;
-height: 500px;
-background-size: cover;
-min-width: 100%;
+background: linear-gradient(rgba(197, 197, 211,0.3), rgba(197, 197, 211,0.5)),
+url('../../images/streetblur.jpg') center center no-repeat fixed;
+position: relative;
+position: top center;
+height: auto 400;
+background-attachment: fixed;
+overflow: hidden;
+}
+#screen{
+float: left;
+
+}
+.filler{
+  height: 1000px;
+}
+#flat{
+  position: top right
+  float: right;
+  left: 400px;
+  height: 300px;
+  width: 400px;
+  position: absolute;
+}
+
+#title{
+  font-size: 4em;
+  text-align: center;
+  font-weight: 300;
+  padding-top: 250px;
+  padding-bottom: 250px;
+
+  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+}
+#PHP{
+float:left;
+}
+
+#linkbar{
+  background-color: rgba(176, 176, 187, 0.5);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
 }

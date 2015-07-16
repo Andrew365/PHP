@@ -26,7 +26,8 @@ class Router{
 */
       // $route = new Route('GET', 'blah', 'indexcontroller', 'index', '');
       $route = new Route('GET', 'help', 'helpcontroller', 'index', '');
-      $route1 = new Route('GET', 'signup', 'signupcontroller', 'index', '');
+      $route1 = new Route('GET', 'signup', 'authcontroller', 'signup', '');
+      $route2 = new Route('GET', 'login', 'authcontroller', 'login');
 /*only use once*/ //$route2 = new Route('GET', 'createdb', 'authcontroller', 'createdb', '');
 /*only use once*/ //$route3 = new Route('GET', 'createtables', 'authcontroller', 'createtables', '');
 

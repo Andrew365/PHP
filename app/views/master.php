@@ -1,7 +1,7 @@
 <html>
 <head>
 	<div id="link_bar">
-		<a href="<?php echo URL; ?>signup">Sign Up</a>
+		<a href="<?php echo URL; ?>signup">SignUp</a>
 		<a href="<?php echo URL; ?>help">Help</a>
 		<!--<a href="<?php echo URL; ?>app/controllers/signupcontroller.php">Sign Up</a>-->
 	</div>
@@ -9,6 +9,7 @@
 
 	<link rel="stylesheet" href="<?php echo URL; ?>public/stylesheets/master.css" />
 	<link rel ="stylesheet" href = "<?php echo URL; ?>public/stylesheets/reset.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
 	<!-- media queries -->
 	<link rel="stylesheet" type="text/css" media="only screen and (min-width:980px) and
